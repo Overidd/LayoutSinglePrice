@@ -5,6 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <script src="https://cdn.tailwindcss.com"></script>
   <title>Frontend Mentor | Single Price Grid Component</title>
 
   <style>
@@ -17,21 +18,35 @@
   </style>
 </head>
 
-<body>
-  <main>
-    <section>
-      <h2 class="">Join our community</h2>
-      <span class="">30-day, hassle-free money back guarantee</span>
-      <p class="">
+<body class="flex h-dvh bg-[var(--LightGray)]">
+  <main class="w-[85%] m-auto rounded-md overflow-hidden lg:grid lg:grid-cols-2 lg:max-w-3xl shadow-xl">
+    <section class="bg-white font-bold space-y-5 p-6 col-span-2 lg:p-14">
+      <h2 class="text-[var(--Cyan)] text-lg tracking-wide lg:text-2xl">Join our community</h2>
+      <span class="text-[var(--BrightYellow)] block lg:text-xl">30-day, hassle-free money back guarantee</span>
+      <p class="text-[var(--GrayishBlue)] text-sm font-normal lg:text-xl">
         Gain access to our full library of tutorials along with expert code reviews.
         Perfect for any developers who are serious about honing their skills.
       </p>
     </section>
-    <section>
-      <h2>Monthly </h2>
+    <section class="bg-[--Cyan] text-white font-medium space-y-5 p-6 lg:p-12">
+      <h2 class="font-bold lg:text-2xl">Monthly Subscription</h2>
+      <p><span class="text-4xl mr-2 align-middle">$29</span> <span class="opacity-40 align-middle">per month</span></p>
+      
+      <p>Full access for less than $1 a day</p>
+      <button class="cursor-pointer bg-[--BrightYellow] w-full py-3 rounded-md shadow-xl">Sign Up</button>
     </section>
-    <section>
 
+    <section class="bg-[#5eccca] text-white space-y-5 p-6 lg:p-12 ">
+      <h2 class="font-bold  text-lg tracking-wide lg:text-2xl">Why Us</h2>
+      <p class="text-sm opacity-70 leading-5 tracking-wide lg:text-lg">
+        Tutorials by industry experts <br>
+        Peer & expert code review <br>
+        Coding exercises <br>
+        Access to our GitHub repos<br>
+        Community forum <br>
+        Flashcard decks <br>
+        New videos every week <br>
+      </p>
     </section>
   </main>
 </body>
